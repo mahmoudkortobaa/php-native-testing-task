@@ -24,11 +24,11 @@ Client can create a draft of the document. Till the document is in draft, it can
 
 ## API
 
-- `POST /api/v1/document/` - credting draft of the document
-- `GET /api/v1/document/{id}` - getting document by id
-- `PATCH /api/v1/document/{id}` - edit document
-- `POST /api/v1/document/{id}/publish` - publish document
-- `GET /api/v1/document/?page=1&perPage=20` - get last document with pagination, sorting (new added are on the top)
+- `POST` localhost/index.php?route=create - credting draft of the document
+- `GET   localhost/index.php?route=view&id=id` - getting document by id
+- `PATCH localhost/index.php?route=edit&id=id` - edit document
+- `POST  localhost/index.php?route=publish&id=id` - publish document
+- `GET   localhost/index.php?route=list&page=1&perPage=20` - get last document with pagination, sorting (new added are on the top)
 
 
 - If document is not found, 404 NOT Found must be returned
